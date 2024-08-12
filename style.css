@@ -45,7 +45,6 @@ article:first-of-type picture img{
 }
 
 article:first-of-type section{
-    border:1px solid hotpink;
     padding-block:2.5rem;
     padding-inline:1.5rem;
     color:var(--dark-navy);
@@ -104,6 +103,7 @@ input[type='email']{
 input[type='email']::placeholder{
     line-height:150%;
     color:var(--dark-navy);
+    opacity:0.5;
 }
 
 input[type='submit']{
