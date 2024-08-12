@@ -15,7 +15,7 @@
 :root{
     --dark-navy:#242742;
     --pale-navy:#36384D;
-    --grey-25:#19182B;
+    --grey-25:#19182B40;
     --white:#FFFFFF;
     --vermellion:#FF6155;
     --gradient-stop-0: #FF6A3A;
@@ -88,8 +88,31 @@ form{
     gap:0.5rem;   
 }
 
+label{
+    font-size:0.75rem;
+    line-height:150%;
+    font-weight:bold;
+}
+
+input[type='email']{
+    padding-block:1rem;
+    padding-inline-start:1.5rem;
+    border:1px solid var(--grey-25);
+    border-radius:8px;
+}
+
+input[type='email']::placeholder{
+    line-height:150%;
+    color:var(--dark-navy);
+}
+
 input[type='submit']{
     margin-block-start:1rem;
-    padding-inline:2.875rem;
-    padding-block:1.125rem;
+    padding-inline:2.9375rem;
+    padding-block:0.9375rem;
+    border-radius:8px;
+    border:none;
+    background-color:var(--dark-navy);
+    color:var(--white);
+    line-height:150%;
 }
