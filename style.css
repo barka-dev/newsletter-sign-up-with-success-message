@@ -55,7 +55,7 @@ article:first-of-type picture img{
     height:auto;
 }
 
-article:first-of-type section{
+section{
     padding-block:2.5rem;
     padding-inline:1.5rem;
     color:var(--dark-navy);
@@ -161,5 +161,27 @@ button{
 
     article:first-of-type{
         width:58rem;
+        padding:1.5rem;
+        border-radius:2.25rem;
+        display:flex;
+        gap:1.5rem;
+    }
+
+    picture{
+        order:2;
+    }
+
+    article:first-of-type picture img{
+        width:auto;
+        height:100%;
+    }
+    
+    section{
+        order:1;
+        padding-block:4.5rem;
+        padding-inline:2.5rem;
+        color:var(--dark-navy);
+        display:grid;
+        gap:1.5rem;
     }
 }
