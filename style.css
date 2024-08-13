@@ -111,6 +111,7 @@ label,span{
 
 span{
     color:var(--vermellion);
+    display:none;
 }
 
 input[type='email']{
@@ -127,10 +128,10 @@ input[type='email']::placeholder{
     opacity:0.5;
 }
 
-input[type=email]:hover{
+.errorStyle{
     background-color:#FF615526;
-    border:1px solid var(--vermellion);
-    color:var(--vermellion);
+    border:1px solid var(--vermellion) !important;
+    color:var(--vermellion) !important;
 }
 
 input[type='submit']{
@@ -148,7 +149,7 @@ input[type='submit'], button{
     cursor:pointer;
 }
 
-input[type=submit]:focus, button:focus{
+input[type=submit]:hover, button:hover{
     background: var(--gradient-stop-0);
     background: linear-gradient(90deg, var(--gradient-stop-0) 0%, var(--gradient-stop-100) 100%);
     box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
