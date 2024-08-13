@@ -98,10 +98,19 @@ form{
     gap:0.5rem;   
 }
 
-label{
+div{
+    display:flex;
+    justify-content:space-between;
+}
+
+label,span{
     font-size:0.75rem;
     line-height:150%;
     font-weight:bold;
+}
+
+span{
+    color:var(--vermellion);
 }
 
 input[type='email']{
@@ -118,6 +127,12 @@ input[type='email']::placeholder{
     opacity:0.5;
 }
 
+input[type=email]:hover{
+    background-color:#FF615526;
+    border:1px solid var(--vermellion);
+    color:var(--vermellion);
+}
+
 input[type='submit']{
     margin-block-start:1rem;  
 }
@@ -131,6 +146,14 @@ input[type='submit'], button{
     color:var(--white);
     line-height:150%;
     cursor:pointer;
+}
+
+input[type=submit]:focus, button:focus{
+    background: var(--gradient-stop-0);
+    background: linear-gradient(90deg, var(--gradient-stop-0) 0%, var(--gradient-stop-100) 100%);
+    box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
+    -webkit-box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
+    -moz-box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
 }
 
 article:last-of-type{
@@ -154,13 +177,7 @@ button{
     margin-top:auto;
 }
 
-input[type=submit]:focus, button:focus{
-    background: var(--gradient-stop-0);
-    background: linear-gradient(90deg, var(--gradient-stop-0) 0%, var(--gradient-stop-100) 100%);
-    box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
-    -webkit-box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
-    -moz-box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
-}
+
 
 @media screen and (min-width:768px){
     main{
