@@ -153,6 +153,14 @@ button{
     margin-top:auto;
 }
 
+input[type=submit]:focus, button:focus{
+    background: var(--gradient-stop-0);
+    background: linear-gradient(90deg, var(--gradient-stop-0) 0%, var(--gradient-stop-100) 100%);
+    box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
+    -webkit-box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
+    -moz-box-shadow: 0px 16px 32px 0px rgba(255,97,85,0.5);
+}
+
 @media screen and (min-width:768px){
     main{
         place-items:center;
@@ -183,5 +191,9 @@ button{
         color:var(--dark-navy);
         display:grid;
         gap:1.5rem;
+    }
+
+    h1, h2{
+        font-size:3.5rem;
     }
 }
