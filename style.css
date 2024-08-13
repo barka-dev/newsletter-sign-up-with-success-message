@@ -30,7 +30,11 @@
     font-weight:normal;
 }
 
-h1, h2, strong{
+body{
+    background-color:var(--pale-navy);
+}
+
+h1, h2, strong, button, input[type=submit]{
     font-weight:bold;
 }
 
@@ -42,6 +46,7 @@ main{
 article{
     grid-column:1 / 13;
     grid-row:1;
+    background-color:var(--white);
 }
 
 article:first-of-type picture img{
@@ -124,14 +129,16 @@ input[type='submit'], button{
     background-color:var(--dark-navy);
     color:var(--white);
     line-height:150%;
+    cursor:pointer;
 }
 
 article:last-of-type{
-    background-color:var(--white);
     padding:9.3125rem 1.5rem 2.5rem;
     display:flex;
     flex-direction:column;
     gap:1.5rem;
+    z-index:2;
+    display:none;
 }
 
 article:last-of-type img{
@@ -144,4 +151,15 @@ h2{
 
 button{
     margin-top:auto;
+}
+
+@media screen and (min-width:768px){
+    main{
+        place-items:center;
+        height:100vh;
+    }
+
+    article:first-of-type{
+        width:58rem;
+    }
 }
