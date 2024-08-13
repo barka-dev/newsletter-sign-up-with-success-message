@@ -48,6 +48,8 @@ article{
     grid-column:1 / 13;
     grid-row:1;
     background-color:var(--white);
+    display:flex;
+    flex-direction:column;
 }
 
 article:first-of-type picture img{
@@ -159,8 +161,6 @@ input[type=submit]:hover, button:hover{
 
 article:last-of-type{
     padding:9.3125rem 1.5rem 2.5rem;
-    display:flex;
-    flex-direction:column;
     gap:1.5rem;
     z-index:2;
     display:none;
@@ -175,7 +175,7 @@ h2{
 }
 
 button{
-    margin-top:auto;
+    margin-top:14.9375rem;
 }
 
 
@@ -191,6 +191,7 @@ button{
         padding:1.5rem;
         border-radius:2.25rem;
         display:flex;
+        flex-direction:row;
         gap:1.5rem;
     }
 
