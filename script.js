@@ -19,7 +19,6 @@ form.addEventListener('submit', (event)=>{
         userEmailDisplay.textContent = data.email;
 
     }else{
-        console.log("invalid email");
         errorDisplay.style.display = 'inline';
         emailInput.classList.add('errorStyle');
     }
