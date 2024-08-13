@@ -8,10 +8,6 @@ const emailInput = document.querySelector("#emailInput");
 
 const regex =  /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// const root = document.querySelector(":root");
-// const rootstyles = getComputedStyle(root);
-// const errorColor = rootstyles.getPropertyValue('--vermellion');
-
 form.addEventListener('submit', (event)=>{
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -35,4 +31,4 @@ dismissBtn.addEventListener('click',()=>{
     form.reset();
     card.style.display = 'flex';
     emailInput.classList.remove('errorStyle');
-})
+});
