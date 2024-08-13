@@ -44,6 +44,7 @@ main{
 }
 
 article{
+    color:var(--dark-navy);
     grid-column:1 / 13;
     grid-row:1;
     background-color:var(--white);
@@ -58,7 +59,6 @@ article:first-of-type picture img{
 section{
     padding-block:2.5rem;
     padding-inline:1.5rem;
-    color:var(--dark-navy);
     display:grid;
     gap:1.5rem;
 }
@@ -109,6 +109,7 @@ input[type='email']{
     padding-inline-start:1.5rem;
     border:1px solid var(--grey-25);
     border-radius:8px;
+    color:var(--dark-navy);
 }
 
 input[type='email']::placeholder{
@@ -188,12 +189,19 @@ input[type=submit]:focus, button:focus{
         order:1;
         padding-block:4.5rem;
         padding-inline:2.5rem;
-        color:var(--dark-navy);
-        display:grid;
-        gap:1.5rem;
     }
 
     h1, h2{
         font-size:3.5rem;
+    }
+
+    article:last-of-type{
+        width:31.5rem;
+        border-radius:2.25rem;
+        padding:3rem 4rem 4rem;
+    }
+
+    button{
+        margin-top:1rem;
     }
 }
