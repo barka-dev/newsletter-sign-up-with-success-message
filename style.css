@@ -180,7 +180,7 @@ button{
 
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:950px) and (min-height:665px){
     main{
         place-items:center;
         height:100vh;
@@ -222,5 +222,11 @@ button{
 
     button{
         margin-top:1rem;
+    }
+}
+
+@media screen and (550px<=width<950px){
+    main{
+        transform:scale(0.8);
     }
 }
